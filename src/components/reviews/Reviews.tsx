@@ -26,7 +26,7 @@ const Reviews = () => {
                 info: false,
             })
             .then((data: UsersResponse) => setUsers(data.results))
-            .catch(err => console.error(err));
+            .catch((err: any) => console.error(err));
     }, []);
 
     return <>
